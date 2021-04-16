@@ -1,8 +1,7 @@
 language: csharp
-solution: solution-name.sln
+solution: Estranged.Lfs.sln
+
 install:
   - nuget restore Estranged.Lfs.sln
-  - nuget install NUnit.Console -Version 3.9.0 -OutputDirectory testrunner
 script:
-  - msbuild src\Estranged.Lfs.Api\bin\Release\*.nupkg
-  - msbuild src\Estranged.Lfs.Adapter.S3\bin\Release\*.nupkg
+  - msbuild /p:Configuration=Release TravisCI.sln
