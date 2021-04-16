@@ -4,4 +4,4 @@ solution: Estranged.Lfs.sln
 install:
   - nuget restore Estranged.Lfs.sln
 script:
-  - msbuild /p:Configuration=Release TravisCI.sln
+  - msbuild /p:Configuration=Release Estranged.Lfs.sln
